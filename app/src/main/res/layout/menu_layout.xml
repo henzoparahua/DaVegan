@@ -36,6 +36,8 @@
                 android:text="Tofu"
                 android:gravity="center"
                 android:textSize="23sp"
+                android:layout_marginBottom="12dp"
+
                 />
             <RatingBar
                 android:layout_width="wrap_content"
@@ -76,6 +78,7 @@
                 android:text="Italian Japonese Macarrone"
                 android:gravity="center"
                 android:textSize="23sp"
+                android:layout_marginBottom="12dp"
                 />
                 <RatingBar
                     android:layout_width="wrap_content"
