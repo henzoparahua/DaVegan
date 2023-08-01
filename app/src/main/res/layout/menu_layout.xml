@@ -13,45 +13,81 @@
         android:orientation="horizontal"
         >
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="300dp"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
             android:layout_weight="1"
             android:layout_marginLeft="14dp"
             android:layout_marginTop="14dp"
             android:layout_marginBottom="14dp"
             android:layout_marginRight="7dp">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/logo"
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:src="@drawable/tofu"
+                android:scaleType="centerCrop"
                 />
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Tofu"
+                android:gravity="center"
+                android:textSize="23sp"
+                />
+            <RatingBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:numStars="5"
+                android:max="5"
+                android:rating="0.0"
+                android:layout_gravity="end"
+                android:layout_marginEnd="12dp"
+                style="@style/Widget.AppCompat.RatingBar.Small"
                 />
-
+    </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="wrap_content"
-            android:layout_height="300dp"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
             android:layout_weight="1"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="14dp"
             android:layout_marginBottom="14dp"
             android:layout_marginRight="14dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/logo"
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/macarrone"
                 />
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Italian Japonese Macarrone"
+                android:gravity="center"
+                android:textSize="23sp"
                 />
-
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:max="5"
+                    android:rating="0.0"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="12dp"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    />
+            </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
 
