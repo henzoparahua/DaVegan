@@ -26,6 +26,7 @@
         app:startIconDrawable="@drawable/baseline_people">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtusu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
@@ -46,6 +47,7 @@
         app:startIconDrawable="@drawable/baseline_lock">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtpass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -53,14 +55,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
+        android:id="@+id/fyp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="25dp"
+        android:clickable="true"
         android:text="Forgot your Password" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnentrar"
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:backgroundTint="#0A5A0D"

@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutUs_activity">
+    tools:context=".AboutUs_activity"
+    android:orientation="vertical"
+    android:gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:id="@+id/imglogoview"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imglogoview"
+            android:text="About DaVegan"
+            android:id="@+id/Headertittlevegan"
+            android:textColor="#000"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Headertittlevegan"
+            android:layout_toRightOf="@+id/imglogoview"
+            android:text="Nossa empresa é focada em oferecer facilidade para pessoas veganas
+que tem dificuldade para encontrar comidas sem origem animal."
+            android:textColor="#000"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Um restaurante vegano precisa trabalhar com materiais sem origem animal. Isso inclui toalhas, uniformes e todos os demais itens; O restaurante vegano também não pode trabalhar com ovos e laticínios, nem receitas que envolvem esses elementos. Já os restaurantes vegetarianos podem fazer esse uso."
+            android:layout_marginHorizontal="14sp"
+            android:textColor="#000"
+            android:textSize="14sp"
+            />
+
+</LinearLayout>
