@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -31,8 +32,16 @@ public class Login_activity extends AppCompatActivity {
         btnentrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Menu_activity.class));
-                finish();
+                String usuario, senha;
+                usuario = txtusu.getText().toString();
+                senha = txtpass.getText().toString();
+                if(usuario.equals("Henry") && senha.equals("123456")){
+                    startActivity(new Intent(getApplicationContext(), Menu_activity.class));
+                    finish();
+                }else{
+                    Toast.makeText(getApplicationContext(),"Usuario ou Senha invalidos.", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
     }
